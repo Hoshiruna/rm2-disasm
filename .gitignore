@@ -1,0 +1,25 @@
+# Local ROM images and extracted PRG images
+*.[nN][eE][sS]
+*.[pP][rR][gG]
+
+# Local emulator state
+*.sav
+*.srm
+*.mss
+
+# Local research notes and captures
+/notes/
+
+# Assembler outputs and locally downloaded executables
+/build/
+*.o
+*.obj
+*.map
+*.dbg
+*.exe
+*.dll
+
+# Desktop metadata
+Thumbs.db
+Desktop.ini
+.DS_Store

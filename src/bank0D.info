@@ -1,0 +1,41 @@
+# PRG bank $0D, mapped at $8000.
+# CODE ranges cover the title and stage-select instructions in the phase-4 traces.
+
+GLOBAL { CPU "6502"; STARTADDR $8000; INPUTOFFS $34010; INPUTSIZE $4000; LABELBREAK 0; COMMENTS 3; };
+SEGMENT { START $8000; END $BFFF; NAME "PRG_BANK_0D"; };
+
+RANGE { START $8000; END $8002; TYPE Code; };
+RANGE { START $8003; END $8008; TYPE ByteTable; };
+RANGE { START $8009; END $800B; TYPE Code; };
+RANGE { START $800C; END $8014; TYPE ByteTable; };
+RANGE { START $8015; END $802C; TYPE Code; };
+RANGE { START $802D; END $80AA; TYPE ByteTable; };
+RANGE { START $80AB; END $80CB; TYPE Code; };
+RANGE { START $80CC; END $80D8; TYPE ByteTable; };
+RANGE { START $80D9; END $80E9; TYPE Code; };
+RANGE { START $80EA; END $82AA; TYPE ByteTable; };
+RANGE { START $82AB; END $82C9; TYPE Code; };
+RANGE { START $82CA; END $8311; TYPE ByteTable; UNIT 8; };
+RANGE { START $8312; END $865E; TYPE ByteTable; };
+RANGE { START $865F; END $8667; TYPE ByteTable; };
+RANGE { START $8668; END $9EE6; TYPE ByteTable; };
+RANGE { START $9EE7; END $9EFC; TYPE Code; };
+RANGE { START $9EFD; END $BFFF; TYPE ByteTable; };
+
+LABEL { ADDR $2000; NAME "PPUCTRL"; };
+LABEL { ADDR $2001; NAME "PPUMASK"; };
+LABEL { ADDR $27; NAME "buttons_pressed"; COMMENT "New presses in the current frame."; };
+LABEL { ADDR $2A; NAME "cursor_or_stage"; COMMENT "Cursor slot until confirmation stores the stage ID."; };
+LABEL { ADDR $9A; NAME "boss_clear_flags"; };
+LABEL { ADDR $8000; NAME "stage_select_entry"; COMMENT "Called through the fixed bank's stage-select wrapper."; };
+LABEL { ADDR $8009; NAME "title_screen_entry"; COMMENT "Called through the fixed bank's title wrapper."; };
+LABEL { ADDR $8015; NAME "initialize_stage_select"; COMMENT "Set PPU state and load the stage-select nametable."; };
+LABEL { ADDR $80AB; NAME "read_stage_select_input"; };
+LABEL { ADDR $80C8; NAME "confirm_stage_select"; COMMENT "Start selects the current slot."; };
+LABEL { ADDR $80D9; NAME "resolve_boss_slot"; COMMENT "Look up the stage ID and check its clear flag."; };
+LABEL { ADDR $82AB; NAME "move_stage_select_cursor"; };
+LABEL { ADDR $82CA; NAME "cursor_neighbor_table"; COMMENT "Eight directional combinations for each cursor slot."; };
+LABEL { ADDR $865F; NAME "cursor_to_stage_table"; COMMENT "Slot $04 maps to stage $02 (Wood Man)."; };
+LABEL { ADDR $9EE7; NAME "initialize_title_screen"; COMMENT "Title and opening setup."; };
+LABEL { ADDR $C051; NAME "enqueue_audio_command"; };
+LABEL { ADDR $C05D; NAME "write_mmc1_control"; };

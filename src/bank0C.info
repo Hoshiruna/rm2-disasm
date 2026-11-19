@@ -1,0 +1,20 @@
+# PRG bank $0C, mapped at $8000 for audio.
+# Both entry points were observed in the natural NMI audio trace.
+
+GLOBAL {
+    CPU "6502";
+    STARTADDR $8000;
+    INPUTOFFS $30010;
+    INPUTSIZE $4000;
+    LABELBREAK 0;
+    COMMENTS 3;
+};
+
+SEGMENT { START $8000; END $BFFF; NAME "PRG_BANK_0C"; };
+
+RANGE { START $8000; END $8006; TYPE Code; };
+RANGE { START $8007; END $BFFF; TYPE ByteTable; };
+
+LABEL { ADDR $8000; NAME "audio_frame_update"; COMMENT "Sound update entry selected by fixed-bank audio code."; };
+LABEL { ADDR $8003; NAME "audio_command"; COMMENT "A carries the command fetched from the audio queue."; };
+LABEL { ADDR $8235; NAME "audio_frame_update_body"; COMMENT "Target of the entry jump at $8000."; };

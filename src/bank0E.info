@@ -1,0 +1,69 @@
+# PRG bank $0E, mapped at $8000.
+# CODE ranges retain prior analysis and add the three phase-4 scene traces.
+# At $0E:$8922 and $894A, the phase-4 CDL also marks the movement instructions.
+
+GLOBAL { CPU "6502"; STARTADDR $8000; INPUTOFFS $38010; INPUTSIZE $4000; LABELBREAK 0; COMMENTS 3; };
+SEGMENT { START $8000; END $BFFF; NAME "PRG_BANK_0E"; };
+
+RANGE { START $8000; END $806B; TYPE Code; };
+RANGE { START $806C; END $8071; TYPE ByteTable; };
+RANGE { START $8072; END $807E; TYPE Code; };
+RANGE { START $807F; END $8087; TYPE ByteTable; };
+RANGE { START $8088; END $8090; TYPE Code; };
+RANGE { START $8091; END $8170; TYPE ByteTable; };
+RANGE { START $8171; END $8174; TYPE Code; };
+RANGE { START $8175; END $8177; TYPE ByteTable; };
+RANGE { START $8178; END $817D; TYPE Code; };
+RANGE { START $817E; END $8180; TYPE ByteTable; };
+RANGE { START $8181; END $8195; TYPE Code; };
+RANGE { START $8196; END $84ED; TYPE ByteTable; };
+RANGE { START $84EE; END $84F3; TYPE Code; };
+RANGE { START $84F4; END $84F4; TYPE ByteTable; };
+RANGE { START $84F5; END $8507; TYPE Code; };
+RANGE { START $8508; END $8568; TYPE ByteTable; };
+RANGE { START $8569; END $857B; TYPE Code; };
+RANGE { START $857C; END $85A5; TYPE ByteTable; };
+RANGE { START $85A6; END $85B1; TYPE Code; };
+RANGE { START $85B2; END $85FA; TYPE ByteTable; };
+RANGE { START $85FB; END $860B; TYPE Code; };
+RANGE { START $860C; END $8782; TYPE ByteTable; };
+RANGE { START $8783; END $878E; TYPE ByteTable; };
+RANGE { START $878F; END $879A; TYPE ByteTable; };
+RANGE { START $879B; END $87F1; TYPE ByteTable; };
+RANGE { START $87F2; END $880C; TYPE Code; };
+RANGE { START $880D; END $8921; TYPE ByteTable; };
+RANGE { START $8922; END $893E; TYPE Code; };
+RANGE { START $893F; END $8949; TYPE ByteTable; };
+RANGE { START $894A; END $8964; TYPE Code; };
+RANGE { START $8965; END $BFFF; TYPE ByteTable; };
+
+LABEL { ADDR $2002; NAME "PPUSTATUS"; };
+LABEL { ADDR $8000; NAME "startup_bank_0e"; COMMENT "Reset setup selects PRG bank $0E before jumping here."; };
+LABEL { ADDR $8006; NAME "wait_for_vblank"; };
+LABEL { ADDR $800B; NAME "wait_for_vblank_clear"; };
+LABEL { ADDR $801B; NAME "clear_cpu_ram"; COMMENT "Clear $0000-$07FF one page at a time."; };
+LABEL { ADDR $BFFF; NAME "mmc1_chr_bank_0_serial"; };
+LABEL { ADDR $C05D; NAME "write_mmc1_control"; COMMENT "Control-register write routine in fixed bank $0F."; };
+LABEL { ADDR $DFFF; NAME "mmc1_chr_bank_1_serial"; };
+LABEL { ADDR $23; NAME "buttons_held"; };
+LABEL { ADDR $27; NAME "buttons_pressed"; };
+LABEL { ADDR $2A; NAME "stage_id"; };
+LABEL { ADDR $2C; NAME "player_state"; COMMENT "Index into the movement handler tables."; };
+LABEL { ADDR $460; NAME "player_x_pixels"; };
+LABEL { ADDR $480; NAME "player_x_fraction"; };
+LABEL { ADDR $600; NAME "player_x_speed_pixels"; };
+LABEL { ADDR $620; NAME "player_x_speed_fraction"; };
+LABEL { ADDR $805F; NAME "open_title_screen"; };
+LABEL { ADDR $8072; NAME "prepare_stage_select"; };
+LABEL { ADDR $8088; NAME "begin_boss_stage"; COMMENT "Stage $02 reached this entry after the Wood Man intro."; };
+LABEL { ADDR $8171; NAME "gameplay_loop"; COMMENT "Observed from frame 1361 in Wood Man's stage."; };
+LABEL { ADDR $84EE; NAME "dispatch_player_state"; };
+LABEL { ADDR $8569; NAME "player_standing"; };
+LABEL { ADDR $85A6; NAME "player_start_walking"; };
+LABEL { ADDR $85FB; NAME "player_jumping"; };
+LABEL { ADDR $8783; NAME "player_handler_lo"; };
+LABEL { ADDR $878F; NAME "player_handler_hi"; };
+LABEL { ADDR $8922; NAME "apply_horizontal_movement"; };
+LABEL { ADDR $894A; NAME "add_player_x_speed"; COMMENT "Add fractional speed first and carry into pixel position."; };
+LABEL { ADDR $C557; NAME "enter_title_screen"; COMMENT "Fixed-bank wrapper."; };
+LABEL { ADDR $C565; NAME "enter_stage_select"; COMMENT "Fixed-bank wrapper."; };
