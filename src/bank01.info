@@ -1,0 +1,14 @@
+# PRG bank $01 at $8000. Code and data ranges are unclassified.
+
+GLOBAL {
+    CPU "6502";
+    STARTADDR $8000;
+    INPUTOFFS $04010;
+    INPUTSIZE $4000;
+    LABELBREAK 0;
+    COMMENTS 3;
+};
+
+SEGMENT { START $8000; END $BFFF; NAME "PRG_BANK_01"; };
+
+RANGE { START $8000; END $BFFF; TYPE ByteTable; };
