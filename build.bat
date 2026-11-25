@@ -10,6 +10,7 @@ if not "%~1"=="" (
 
 set "projectDir=%~dp0"
 set "sourceDir=%projectDir%src"
+set "graphicsDir=%projectDir%gfx\screens"
 set "buildDir=%projectDir%build"
 set "workDir=%buildDir%\rom-%RANDOM%-%RANDOM%"
 mkdir "%workDir%" || exit /b 1
@@ -23,7 +24,8 @@ for %%B in (00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F) do (
     call :assemble_bank %%B || goto :leave_workdir
 )
 
-"%linker%" -C "%projectDir%nes.cfg" -o rockman2.nes %objects% || goto :leave_workdir
+"%assembler%" -I "%graphicsDir%" --bin-include-dir "%graphicsDir%" -o gfx.o "%graphicsDir%\import.asm" || goto :leave_workdir
+"%linker%" -C "%projectDir%nes.cfg" -o rockman2.nes %objects% gfx.o || goto :leave_workdir
 move /Y rockman2.nes "%buildDir%\rockman2.nes" >nul || goto :leave_workdir
 echo Built "%buildDir%\rockman2.nes"
 set "result=0"
