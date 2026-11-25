@@ -1,0 +1,6 @@
+#rockman2 0x2D
+#priority 8
+#channels SQ2 TRI
+
+FX:
+    v15 @pitch-127 p30%4 v15 p15 !

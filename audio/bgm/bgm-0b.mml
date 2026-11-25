@@ -1,0 +1,68 @@
+#rockman2 0x0B
+
+SQ1:
+    @tick6 v12 @d3 @key19 @env96,1 @mod1 o3 d#1
+    f#1 a1 o4 c2 o3 a16 o4 c16
+    d#16 c16 d#16 c16 d#16 f#16 @mod0
+    :loop_ac7e
+    @env6,2 @key31 @d3 o5 c16 c16 r16 c16
+    r16 c16 c16 r8 c16 c16 r16 c16
+    r16 c16 c16 @env3,2 c8 r16 c16 r4
+    g8 r16 g16 f8 g8 @env6,2 o4 a#16
+    a#16 r16 a#16 r16 a#16 a#16 r8 a#16
+    a#16 r16 a#16 r16 a#16 a#16 @env3,2 a#8
+    r16 a#16 r4 o5 g8 r16 g16 f8
+    g8 @env6,2 o4 a16 a16 r16 a16 r16
+    a16 a16 r8 a16 a16 r16 a16 r16
+    a16 a16 @env3,2 a8 r16 a16 r4 o5
+    g8 r16 g16 f8 g8 @env6,2 o4 f16
+    f16 r16 f16 r16 f16 f16 r8 f16
+    f16 r16 f16 r16 f16 f16 @mod1 g4
+    b4 o5 d4 g4 @mod0 @loop0,loop_ac7e
+
+SQ2:
+    @tick6 v11 @d0 @env10,1 @key31 o4 c4 r16
+    a16 f#16 d#16 c2 d#4 r16 o5 c16
+    o4 a16 f#16 d#2 f#4 r16 o5 d#16
+    c16 o4 a16 f#2 a4 r16 o5 f#16
+    d#16 o4 a16 o5 c2
+    :loop_ad1d
+    @key31 @d3 @env6,2 o4 g16 g16 r16 g16
+    r16 g16 g16 r8 g16 g16 r16 g16
+    r16 g16 g16 @env3,2 g8 r16 g16 r4
+    o5 d#8 r16 d#16 d8 d#8 @loop1,loop_ad1d @d3
+    @env6,2 o4 f16 f16 r16 f16 r16 f16
+    f16 r8 f16 f16 r16 f16 r16 f16
+    f16 @env3,2 f8 r16 f16 r4 o5 d#8
+    r16 d#16 d8 d#8 @env6,2 o4 d16 d16
+    r16 d16 r16 d16 d16 r8 d16 d16
+    r16 d16 r16 d16 d16 @mod1 d4 g4
+    b4 o5 d4 @mod0 @loop0,loop_ad1d
+
+TRI:
+    @tick6 @gate48 @key31
+    :loop_ad87
+    o4 c16 c16 c16 o3 a#16 @loop13,loop_ad87 @gate32
+    @pitch21 g16 g16 f16 f16 d#16 d#16 c#16
+    c#16 @gate80 @pitch0
+    :loop_ad9f
+    @gate64 o4 c16 c16 r16 c16 d#8 f16
+    c16 r16 o3 a#16 o4 c16 o3 b16
+    f8 f#16 g16 @loop6,loop_ad9f g16 g16 o4 g16
+    r16 f16 g16 r16 o3 g16 r16 g16
+    o4 g16 r16 f16 g16 d#16 d16 @loop0,loop_ad9f
+
+NOI:
+    @tick6 @env8,1 v15
+    :loop_adce
+    @env2,15 n2/4 n2/4 n2/4 @env4,1 n7/4 @loop1,loop_adce
+    :loop_addc
+    @env2,10 n3/8 n3/8 @env4,4 n7/8 @env2,10 n3/8 @loop2,loop_addc
+    @env4,4 n6/16 n6/16 n6/16 n6/16 n7/16 n7/16 n7/16
+    n7/16
+    :loop_adf8
+    @env3,13 n2/16 n2/16 r16 n2/16 @env4,4 n7/8 @env2,10
+    n2/16 n2/16 @loop0,loop_adf8
+
+MOD:
+    @wave0,0,128,0 @wave1,98,128,0

@@ -1,0 +1,55 @@
+#rockman2 0x13
+
+SQ1:
+    @tick8 @key32 @d3 v10 @env95,4 @mod0
+    :loop_b5a6
+    @tie2 o4 g#2 g#8 c#8 e8 g#8 b4
+    a8 g#4 f#4. @loop3,loop_b5a6 @d1 a2 a8. b8.
+    o5 c#8 o4 g#4. g#8 a8 b4. o5
+    e2 e8 d8 c#8 o4 b8 a#4. a#8
+    b8 o5 c#4. o4 a8 g#8 a8 b8
+    r4 o5 a8 g#8 a8 b8 r4 o4
+    d8. f#8. a8 o5 c#2 c#8. d8. c#8
+    o4 b2 b8 o5 c#4. @d0 o4 a2
+    g#8. a8. b8 a2 g#8. a8. o5 c#8
+    @tie2 f#8 f#2 c#8 c#16 o4 b16 a8
+    b4 o5 c#8 o4 f#4. f#8 g#8 a4.
+    @key20 f#8 d8 o3 a8 o4 f#8 a8
+    e8 g#4 o5 d4 c#8 o4 b4 @rise1,4
+    @key32
+    :loop_b615
+    @tie3 a1 a2 a8 o5 c8 o4 b8
+    @tie2 a8 @loop1,loop_b615 @tick9 a1 @tick10 f4. f8
+    @tick11 f8 g4. @tie3 e1 @env31,1 e1 e1
+    !
+
+SQ2:
+    @tick8 @d3 v5 @env95,4 @key32 r8. @loop0,loop_b5a6 !
+
+TRI:
+    @tick8 @gate129 @key32
+    :loop_b64e
+    o3 a4. a8 a2 a4. a8 a2 @loop1,loop_b64e
+    :loop_b65a
+    f#4. f#8 f#2 f#4. f#8 f#2 @loop1,loop_b65a d4.
+    d8 d2 e4. e8 e2 o2 a4. a8
+    a2 o3 f#4. f#8 f#2
+    :loop_b676
+    d4. d8 d2 @loop1,loop_b676 o2 b4. b8 b2
+    o3 e4. e8 e8 f4. f#4. f#8 f#2
+    f4. f8 f2 e4. e8 e2 d#4. d#8
+    d#2 d4. d8 d2 e4. e8 e2
+    :loop_b6a0
+    g4. g8 g2 @loop1,loop_b6a0
+    :loop_b6a8
+    f#4. f#8 f#2 @loop1,loop_b6a8 @tick9 f4. f8 f2
+    @tick10 d4. d8 @tick11 d8 e4. @tie2 o2
+    a1 a4 !
+
+NOI:
+    @tick8 v12 @env1,1
+    :loop_b6cb
+    n16/2. n8/4 @loop25,loop_b6cb @tick9 n16/2. n8/4 !
+
+MOD:
+    @wave2,34,128,0

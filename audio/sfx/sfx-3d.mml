@@ -1,0 +1,9 @@
+#rockman2 0x3D
+#priority 13
+#channels SQ2
+
+FX:
+    :loop_bebe
+    w%3 @d2 @pitch-63 v15 p31 @loop1,loop_bebe w%8 @pitch-8
+    v15 p63%8 v12 p63%8 v10 p63%8 v6 p63%8
+    v4 p63%8 v3 p60 !

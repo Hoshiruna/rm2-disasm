@@ -1,0 +1,6 @@
+#rockman2 0x24
+#priority 3
+#channels SQ2
+
+FX:
+    w%16 @d1 v15 @mod2,68,128,0 @pitch-32 p269 !

@@ -1,0 +1,8 @@
+#rockman2 0x39
+#priority 6
+#channels SQ2 TRI NOI
+
+FX:
+    :loop_be17
+    @d3 @pitch-79 v15 @mod2,167,130,5 p508 @pitch-127 @volume129 p427%4
+    @d2 p13 @loop1,loop_be17 !

@@ -1,0 +1,7 @@
+#rockman2 0x35
+#priority 3
+#channels SQ2 NOI
+
+FX:
+    :loop_bdb9
+    @d1 v15 @pitch-10 p106%3 v4 p8 @loop2,loop_bdb9 !

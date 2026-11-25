@@ -1,0 +1,7 @@
+#rockman2 0x29
+#priority 2
+#channels SQ2
+
+FX:
+    :loop_bc4e
+    w%4 @d1 @pitch-117 v15 @mod1,70,130,1 p63 @loop1,loop_bc4e !

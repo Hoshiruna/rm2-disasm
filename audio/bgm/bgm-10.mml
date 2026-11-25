@@ -1,0 +1,40 @@
+#rockman2 0x10
+
+SQ1:
+    @tick6
+    :loop_b3e2
+    v14 @d3 @key39 @rise1,7 o5 g#4 g#4 @tuplet
+    f#4 f#4 @tuplet f#8 @tuplet f#4 @tuplet f#8
+    @tuplet r4 @mod1 e4 @mod0 @tuplet e8 @tuplet
+    e8 @tuplet e8 @tuplet f#8 g#4 g#4 @tuplet
+    f#4 f#4 @tuplet f#8 @tuplet f#4 @tuplet f#8
+    @tuplet r4 @mod1 f4 @mod0 @tuplet f8 @tuplet
+    f8 @tuplet f8 @tuplet f#8 @loop0,loop_b3e2
+
+SQ2:
+    @tick6
+    :loop_b425
+    @d1 @key39 @rise1,8 v10 @rise1,8 o5 c#4 c#4
+    @tuplet c4 c4 @tuplet c8 @tuplet o4 b4
+    @tuplet b8 @tuplet r4 @mod1 g#4 @mod0 @tuplet
+    g#8 @tuplet g#8 @tuplet g#8 @tuplet o5 d#8
+    @loop0,loop_b425
+
+TRI:
+    @tick6 @gate85 @key39
+    :loop_b455
+    @tuplet o3 a4 @tuplet a8 @tuplet a8 @tuplet
+    o4 a8 @tuplet o3 a8 @loop1,loop_b455 @tuplet g#4
+    @tuplet g#8 @tuplet g#8 @tuplet o4 g#8 @tuplet
+    o3 g#8 @tuplet o4 c#8 @tuplet o5 c#8
+    @tuplet o4 c#8 @tuplet c#8 @pitch16 @tuplet o5
+    g#8 @tuplet f8 @pitch0 @loop0,loop_b455
+
+NOI:
+    @tick6 v15 @env2,8
+    :loop_b488
+    @tuplet n2/8 @tuplet n2/8 @tuplet n2/8 @env5,4 @tuplet
+    n7/8 @env2,8 @tuplet n2/8 @tuplet n2/8 @loop0,loop_b488
+
+MOD:
+    @wave0,0,128,0 @wave1,98,128,0

@@ -1,0 +1,7 @@
+#rockman2 0x2F
+#priority 14
+#channels SQ2
+
+FX:
+    w%5 v15 @d3 p134%8 v15 @mod0,224,128,0 @d1 p201
+    !

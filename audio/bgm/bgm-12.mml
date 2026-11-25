@@ -1,0 +1,16 @@
+#rockman2 0x12
+
+SQ1:
+    @tick8
+    :loop_b560
+    v15 @d1 @env127,1 @pitch-1 @key47 @mod1 o6 g#8
+    @loop0,loop_b560
+
+SQ2:
+    @tick8
+    :loop_b574
+    v10 @d1 @env127,1 @pitch-1 @key47 @mod1 o6 a8
+    @loop0,loop_b574
+
+MOD:
+    @wave0,0,128,0 @wave0,34,128,0

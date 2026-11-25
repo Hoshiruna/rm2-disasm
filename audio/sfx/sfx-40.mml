@@ -1,0 +1,7 @@
+#rockman2 0x40
+#priority 14
+#channels NOI
+
+FX:
+    :loop_bf3d
+    w%4 v6 p4 @loop2,loop_bf3d !

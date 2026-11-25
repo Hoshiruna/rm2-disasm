@@ -1,0 +1,11 @@
+#rockman2 0x2A
+#priority 15
+#channels SQ1 SQ2 NOI
+
+FX:
+    :loop_bc64
+    v15 p427 @d3 @pitch-14 v15 p2034%31 v15 @d2
+    p4 @loop13,loop_bc64 @pitch1 p17 @d0 @pitch1 p21%127 @d2
+    v4 p10
+    :loop_bc8e
+    ~ ~ w%31 p10 @loop12,loop_bc8e !

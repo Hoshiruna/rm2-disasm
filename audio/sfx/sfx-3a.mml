@@ -1,0 +1,11 @@
+#rockman2 0x3A
+#priority 15
+#channels SQ1 SQ2
+
+FX:
+    :loop_be37
+    @pitch-63 v15 p26%3 @pitch-63 v15 p30 @loop1,loop_be37 @d2
+    v15 p427%8 v15 p240 v12 p427%8 v12 p240
+    v9 p427%8 v9 p240 v6 p427%8 v6 p240
+    v4 p427%8 v4 p240 v2 p427%8 v3 p240
+    !

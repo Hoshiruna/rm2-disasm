@@ -1,0 +1,9 @@
+#rockman2 0x21
+#priority 5
+#channels SQ2 NOI
+
+FX:
+    @d0 v15 p906%6 v15 p10 p53%9 @d2 @pitch-1
+    p5 v15 ~ w%9 v10 p5 v10 @pitch0
+    ~ w%9 v6 p4 v7 ~ w%9 v3
+    p3 !

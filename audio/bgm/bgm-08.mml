@@ -1,0 +1,197 @@
+#rockman2 0x08
+
+SQ1:
+    @tick5
+    :loop_a4b5
+    v14 @d1 @key32 @env4,1 o4 c#8 e16 e16
+    e8 e16 e16 e8 c#8 r8 c#16 c#16
+    e8 e16 e16 e8 c#8 r8 g#8 f#8
+    g#8 r8 e16 e16 e8 e16 e16 e8
+    c#8 r8 g#8 r8 f#8 r8 e8 r8
+    f#8 r4 r8 f#16 f#16 f#8 f#16 f#16
+    f#8 d#8 r8 g#8 r8 f#8 r8 e8
+    r8 d#8 r8 c#8 r8 c#8 g#8 b8
+    a#4. c#8 r8 c#8 g#8 b8 a#8 r8
+    o5 d#8 e8 r8 o4 e16 e16 e8
+    e16 e16 e8 c#8 r8 c#16 c#16 e8
+    e16 e16 e8 c#8 r8 g#8 f#8 g#8
+    r8 e16 e16 e8 e16 e16 e8 c#8
+    r8 g#8 r8 f#8 r8 e8 r8 f#8
+    r4 r8 f#16 f#16 f#8 f#16 f#16 f#8
+    d#8 r8 g#8 r8 f#8 r8 e8 r8
+    d#8 r8 c#8 r8 c#8 g#8 b8 a#4.
+    c#8 r8 c#8 g#8 b8 a#8 r8 b8
+    @env16,1 @d2 @tie3 o5 c#8 c#4 c#2 o4
+    b8 o5 e4 c#4 o4 b4 o5 c#4
+    r8 o4 b2 b8 o5 c#4. o4 g#8
+    a8 g#8 e8 r8 e8 g#8 b8 o5
+    c#2. o4 b8 o5 e4 c#4 o4 b4
+    o5 c#4 @tie2 o4 b8 b2 b8 g#8
+    b8 o5 c8 r8 c8 c8 d#8 g#2
+    @env21,3 @d0 v15 @key20 @mod1 o3 g#2. f#8
+    b4 a4 g#4 a4 @tie3 g#8 g#2 g#4
+    f#8 b4 a4 g#4 a4 @tie2 e8 e2
+    e8 f#8 g#8 d#1 @mod0 @key32 @d2 o4
+    c#8 r8 c#8 g#8 b8 a#4. c#8 r8
+    c#8 g#8 b8 a#8 r8 b8 @mod1 @d3
+    @tie2 o5 c#8 c#2 c#4 o4 b8 o5
+    c#8 r8 e4. g#8 f#8 e8 d#8 c#2
+    c#4 o4 b8 o5 c#8 r8 e4. e8
+    f#8 e4 d#2 d#8 c#8 o4 b8 o5
+    g#4. f#4 e4 d#4 d#8 e8 d#8 c#2
+    o4 c#8 r8 c#8 g#8 b8 a#8 r8
+    b8 @mod0 @d2 @tie3 o5 c#8 c#4 c#2
+    o4 b8 o5 e4 c#4 o4 b4 o5
+    c#4 r8 o4 b2 b8 o5 c#4. o4
+    g#8 a8 g#8 e8 r8 e8 g#8 b8
+    o5 c#2. o4 b8 o5 e4 c#4 o4
+    b4 o5 c#4 @tie2 o4 b8 b2 b8
+    g#8 b8 o5 c8 r8 c8 c8 d#8
+    g#4. @key20 @d1 o4 e8 r8 e8 e8
+    d#8 e4 o5 c#8 o4 b4 a4 g#4
+    f#4 f#8 r8 g#8 g#8 r8 g#8 r4
+    f#8 r8 g#8 g#8 r8 g#8 r8 f#8
+    e8 r8 e8 e8 d#8 e4 o5 c#8
+    o4 b4 a4 g#4 f#4 r8 d#8 e8
+    d#8 @tie2 c#8 c#2 r1 @loop0,loop_a4b5
+
+SQ2:
+    @tick5
+    :loop_a643
+    @d1 @key20 @env4,1 v10 r8 o4 c#16 c#16
+    c#8 c#16 c#16 c#8 o3 g#8 r8 g#16
+    g#16 o4 c#8 c#16 c#16 c#8 o3 g#8
+    r8 o4 e8 d#8 e8 r8 c#16 c#16
+    c#8 c#16 c#16 c#8 o3 g#8 r8 o4
+    e8 r8 d#8 r8 c#8 r8 d#8 r4
+    r8 d#16 d#16 d#8 d#16 d#16 d#8 o3
+    b8 r8 o4 e8 r8 d#8 r8 c#8
+    r8 o3 b8 @key32 r4 o4 c#8 r8
+    c#8 g#8 b8 a#4. c#8 r8 c#8 g#8
+    b8 a#8 b8 o5 c#8 @loop1,loop_a643 @env18,1 @d2
+    r16 @tie3 c#8 c#4 c#2 o4 b8 o5
+    e4 c#4 o4 b4 o5 c#4 r8 o4
+    b2 b8 o5 c#4. o4 g#8 a8 g#8
+    e8 r8 e8 g#8 b8 o5 c#2. o4
+    b8 o5 e4 c#4 o4 b4 o5 c#4
+    @tie2 o4 b8 b2 b8 g#8 b8 o5
+    c8 r8 c8 c8 d#8 @tie3 g#4 o4
+    e16 @d0 c#8 e16 e16 e8 e16 e16
+    e8 c#8 r8 c#16 c#16 e8 e16 e16
+    e8 c#8 r8 g#8 f#8 g#8 r8 e16
+    e16 e8 e16 e16 e8 c#8 r8 g#8
+    r8 f#8 r8 e8 r8 f#8 r4 r8
+    f#16 f#16 f#8 f#16 f#16 f#8 d#8 r8
+    g#8 r8 f#8 r8 e8 r8 d#8 @d2
+    r4 c#8 r8 c#8 g#8 b8 a#4. c#8
+    r8 c#8 g#8 b8 a#8 o5 f#8 g#8
+    @d0 r8 o4 e16 e16 e8 e16 e16
+    e8 c#8 r8 c#16 c#16 e8 e16 e16
+    e8 c#8 r8 g#8 f#8 g#8 r8 e16
+    e16 e8 e16 e16 e8 c#8 r8 g#8
+    r8 f#8 r8 e8 r8 f#8 r4 r8
+    f#16 f#16 f#8 f#16 f#16 f#8 d#8 r8
+    g#8 r8 f#8 r8 e8 r8 d#8 @d2
+    r8 c#8 r8 c#8 g#8 b8 a#2 c#8
+    r8 c#8 g#8 b8 a#8 o5 f#8 g#8
+    @env10,1 r16 @tie3 c#8 c#4 c#2 o4 b8
+    o5 e4 c#4 o4 b4 o5 c#4 r8
+    o4 b2 b8 o5 c#4. o4 g#8 a8
+    g#8 e8 r8 e8 g#8 b8 o5 c#2.
+    o4 b8 o5 e4 c#4 o4 b4 o5
+    c#4 @tie2 o4 b8 b2 b8 g#8 b8
+    o5 c8 r8 c8 c8 d#8 r8. @key20
+    @d1 @mod1 o4 c#8 r8 c#8 c#8 o3
+    b8 o4 c#4 a8 f#4 f#4 e4 d#4
+    d#8 r8 e8 e8 r8 e8 r4 d#8
+    r8 e8 e8 r8 e8 r8 d#8 c#8
+    r8 c#8 c#8 o3 b8 o4 c#4 a8
+    f#4 f#4 e4 d#4 r8 o3 b8 o4
+    c#8 o3 b8 @tie2 g#8 g#2 r1 @mod0
+    @loop0,loop_a643
+
+TRI:
+    @tick5 @gate65
+    :loop_a7c4
+    @key44
+    :loop_a7c6
+    o4 c#8 c#16 c#16 @loop7,loop_a7c6
+    :loop_a7cd
+    o3 a8 a16 a16 @loop7,loop_a7cd
+    :loop_a7d4
+    b8 b16 b16 @loop7,loop_a7d4
+    :loop_a7db
+    o4 c#8 c#16 c#16 @loop6,loop_a7db o3 b8 @tie2
+    o4 c#8
+    :loop_a7e5
+    c#8 c#16 c#16 @loop7,loop_a7e5
+    :loop_a7ec
+    o3 a8 a16 a16 @loop7,loop_a7ec
+    :loop_a7f3
+    b8 b16 b16 @loop7,loop_a7f3
+    :loop_a7fa
+    o4 c#8 c#16 c#16 @loop6,loop_a7fa o3 b8 @tie2
+    o4 c#8 d8 d16 d16 d8 d16 d16
+    d8 a16 a16 f#16 f#16 f#8 r8 d16
+    d16 f#8 d16 d16 o5 c#8 o4 f#16
+    f#16 a8 d16 d16 c#8 c#16 c#16 c#8
+    c#16 c#16 c#8 g#16 g#16 e16 e16 b8
+    r8 c#16 c#16 e8 c#16 c#16 b8 e16
+    e16 g#8 c#16 c#16 d8 d16 d16 d8
+    d16 d16 d8 a16 a16 f#16 f#16 f#8
+    r8 d16 d16 f#8 d16 d16 o5 c#8
+    o4 f#16 f#16 a8 d16 d16
+    :loop_a84c
+    o3 b8 b16 b16 @loop2,loop_a84c b8 o4 c8
+    r8 c8 c8 c8 c4 r4
+    :loop_a85b
+    c#8 c#16 c#16 @loop7,loop_a85b
+    :loop_a862
+    o3 a8 a16 a16 @loop7,loop_a862
+    :loop_a869
+    b8 b16 b16 @loop7,loop_a869
+    :loop_a870
+    o4 c#8 c#16 c#16 @loop6,loop_a870 o3 b8 @tie2
+    o4 c#8
+    :loop_a87a
+    c#8 c#16 c#16 @loop7,loop_a87a
+    :loop_a881
+    o3 a8 a16 a16 @loop7,loop_a881
+    :loop_a888
+    b8 b16 b16 @loop7,loop_a888
+    :loop_a88f
+    o4 c#8 c#16 c#16 @loop6,loop_a88f o3 b8 @tie2
+    o4 c#8 d8 d16 d16 d8 d16 d16
+    d8 a16 a16 f#16 f#16 f#8 r8 d16
+    d16 f#8 d16 d16 o5 c#8 o4 f#16
+    f#16 a8 d16 d16 c#8 c#16 c#16 c#8
+    c#16 c#16 c#8 g#16 g#16 e16 e16 b8
+    r8 c#16 c#16 e8 c#16 c#16 b8 e16
+    e16 g#8 c#16 c#16 d8 d16 d16 d8
+    d16 d16 d8 a16 a16 f#16 f#16 f#8
+    r8 d16 d16 f#8 d16 d16 o5 c#8
+    o4 f#16 f#16 a8 d16 d16
+    :loop_a8e1
+    o3 b8 b16 b16 @loop2,loop_a8e1 b8 o4 c8
+    r8 c8 c8 c8 c4 r8 o3 a4
+    a16 a16 a8 a16 a16 a8 a16 a16
+    a8 b4 b16 b16 b8 b16 b16 b8
+    b16 b16 b8
+    :loop_a904
+    @key32 c#4 o4 c#8 o3 d#8 o4 d#8
+    o3 e8 o4 e8 o3 d#8 @loop1,loop_a904 @key44
+    a4 a16 a16 a8 a16 a16 a8 a16
+    a16 a8 b4 b16 b16 b8 b16 b16
+    b8 b16 b16 o4 c4 c#4 @pitch16 a16
+    a16 g#16 g#16 f#16 f#16 e16 e16 @pitch0
+    o3 b8 o4 c#8 r8 o3 b8 o4
+    c#4 o3 b8 o4 c8 c#4 @loop0,loop_a7c4
+
+NOI:
+    @tick5 v15
+    :loop_a944
+    @env2,10 n2/16 r16 n2/16 n2/16 @env3,4 n7/8 @env2,10
+    n2/16 n2/16 @loop0,loop_a944
+
+MOD:
+    @wave0,0,128,0 @wave1,65,128,0

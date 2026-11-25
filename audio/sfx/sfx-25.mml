@@ -1,0 +1,6 @@
+#rockman2 0x25
+#priority 5
+#channels SQ2
+
+FX:
+    w%8 @d1 v15 @pitch15 p100 !

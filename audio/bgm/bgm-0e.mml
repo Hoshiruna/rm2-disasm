@@ -1,0 +1,79 @@
+#rockman2 0x0E
+
+SQ1:
+    @tick8
+    :loop_b1c1
+    @key32 @d2 v14 @env95,4 @mod0 @tie2 o4 a#4
+    a#2. @tie2 b2 b8 o5 c#4. @loop1,loop_b1c1 o4
+    a#4 o5 c#4 g#4 f8 f#8 r4 r8
+    f#8 f8 d#8 c#8 d#8 r8 o4 a#8
+    g#8 f#8 r8 f#8 f8 f#8 @tie2 o5
+    c#4 c#2. d#4. c#4. o4 b4 o5 f4.
+    d#4. c#4 f4. d#4. d4 f#4. f4. d#4
+    @tick7 f#2 @d3 r8 o4 a8 b8 o5
+    c#8 @tie2 d4 d4 d8 c#4 d8 @tie3
+    o4 b4 b8 b4 b8 g#8 b8 o5
+    e4 d4 c#4 o4 b4 @tick6 o5 c4
+    r8 c8 c8 o4 b4 o5 c8 o4
+    a4 r8 a8 a8 b4 o5 c8 d1
+    @key56 @pitch1 @d0 v15 @env47,1 @tie2 o7 a1
+    a1 !
+
+SQ2:
+    @tick8 @d3 v10 @env10,3 @key32
+    :loop_b248
+    r8 o5 c#8 f#8 g#8 a#2 r8 d8
+    f#8 g#8 b2 @loop1,loop_b248 f#8 c#8 f#8 a#8
+    f8 c#8 f8 g#8 d#8 o4 a#8 o5
+    d#8 f#8 c#8 o4 g#8 o5 c#8 f#8
+    :loop_b266
+    c8 o4 g#8 o5 c8 d#8 @loop1,loop_b266 c#2
+    c#8 c4. o4 b8 f#8 b8 o5 c#8
+    d#2 c#8 o4 g#8 o5 c#8 d#8 f2
+    d8 o4 a#8 o5 d8 d#8 f2 d#8
+    o4 a#8 o5 d#8 f8 f#2 @tick7 @d2
+    @env3,3
+    :loop_b28d
+    o4 d8 f#8 a8 o3 a#8 @loop3,loop_b28d
+    :loop_b295
+    o4 e8 g#8 b8 o5 e8 @loop3,loop_b295 @tick6
+    :loop_b29f
+    o4 f8 a8 o5 c8 f8 @loop3,loop_b29f r1
+    @key56 @d0 v15 @pitch1 @env47,1 @tie2 o7 e1
+    e1 @pitch0 !
+
+TRI:
+    @tick8
+    :loop_b2bb
+    @gate129 @key32 o3 f#4. f#8 f#4 r4 @loop3,loop_b2bb
+    f#2 f2 d#2 c#2 c2 d#2 c#4. c#8
+    c#4 r4 o2 b2. o3 c4 c#1 o2
+    a#2. o3 d4 d#1 @gate80 @tick7
+    :loop_b2df
+    d8 d8 r8 d8 d8 o2 a8 o3
+    d8 f#8 @loop1,loop_b2df
+    :loop_b2eb
+    e8 e8 r8 e8 e8 o2 b8 o3
+    e8 g#8 @loop1,loop_b2eb @tick6
+    :loop_b2f9
+    f8 f8 r8 f8 f8 c8 f8 a8
+    @loop1,loop_b2f9 @pitch21
+    :loop_b307
+    @tuplet o5 c#8 @loop2,loop_b307
+    :loop_b30d
+    @tuplet o4 g#8 @loop8,loop_b30d @gate143 @key56 @pitch1 @tie2
+    o6 f1 f1 !
+
+NOI:
+    @tick8 v12 @env1,1
+    :loop_b324
+    r2. n5/8 r8 @loop11,loop_b324 @tick7
+    :loop_b32e
+    @env2,12 n2/8 n2/8 n2/8 n2/8 n2/8 n2/8 @env3,4
+    n7/4 @loop3,loop_b32e @tick6
+    :loop_b341
+    @env2,12 n2/8 n2/8 n2/8 n2/8 n2/8 n2/8 @env3,4
+    n7/4 @loop2,loop_b341 !
+
+MOD:
+    @wave2,34,128,0

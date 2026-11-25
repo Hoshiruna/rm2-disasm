@@ -1,0 +1,6 @@
+#rockman2 0x32
+#priority 14
+#channels SQ2
+
+FX:
+    w%5 v15 @d2 p254%5 p339%5 p403%5 p127 !

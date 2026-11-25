@@ -1,0 +1,9 @@
+#rockman2 0x41
+#priority 15
+#channels SQ1 SQ2
+
+FX:
+    @d2 @pitch47 v15 p53%16 @d0 @pitch47 v15 p60
+    v12 p53%16 v12 p60 v9 p53%16 v9 p60
+    v6 p53%16 v6 p60 v4 p53%16 v4 p60
+    v2 p53%16 v2 p60 !

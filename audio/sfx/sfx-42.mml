@@ -1,0 +1,8 @@
+#rockman2 0x42
+#priority 15
+#channels SQ2
+
+FX:
+    w%3 @d3 v15 p100%3 p89%3 p80%3 p75%3 p67%3
+    p60%3 p53%3 p50%3 v8 p100%3 p89%3 p80%3 p75%3
+    p67%3 p60%3 p53%3 p50 !

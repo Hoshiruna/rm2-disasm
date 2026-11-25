@@ -1,0 +1,6 @@
+#rockman2 0x33
+#priority 14
+#channels NOI
+
+FX:
+    w%7 v15 p15 !

@@ -1,0 +1,8 @@
+#rockman2 0x27
+#priority 14
+#channels SQ2 NOI
+
+FX:
+    @pitch53 @d0 v15 p169%6 v7 p3 @pitch-4 @mod1,66,128,0
+    ~ w%32 v10 p4 @pitch-7 ~ w%32 v10
+    p4 !

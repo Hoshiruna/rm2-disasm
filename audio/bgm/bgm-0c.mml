@@ -1,0 +1,43 @@
+#rockman2 0x0C
+
+SQ1:
+    @tick5 v9 @key17 @env3,5 @d2 @key17 @pitch21 o4
+    a#8 g8 r8 e8 r8 c#16 c#16 c#8
+    o3 a#8 @key29 @pitch0
+    :loop_ae3b
+    v11 @env6,1 @d0 a#8 o4 c#8 f8 o3
+    a#8 o4 c#8 g#8 o3 a#8 o4 c#8
+    g8 o3 a#8 o4 c#8 f#8 o3 a#8
+    o4 c#8 e8 f8 @d1 o3 a#8 o4
+    c#8 f8 o3 a#8 o4 c#8 g#8 o3
+    a#8 o4 c#8 g8 o3 a#8 o4 c#8
+    f#8 o3 a#8 o4 c#8 e8 f8 @loop0,loop_ae3b
+
+SQ2:
+    @tick5 @key29 r1 @env6,1
+    :loop_ae70
+    v7 @d0 r8 o3 a#8 o4 c#8 f8
+    o3 a#8 o4 c#8 g#8 o3 a#8 o4
+    c#8 g8 o3 a#8 o4 c#8 f#8 o3
+    a#8 o4 c#8 e8 @d1 v9 c#8 f8
+    a#8 c#8 f8 o5 c8 o4 c#8 f8
+    b8 c#8 f8 a#8 c#8 f8 g8 g#8
+    @loop0,loop_ae70
+
+TRI:
+    @tick5 @gate48 @key29 @pitch15 o4 a#8 g8 r8
+    e8 r8 c#16 c#16 c#8 o3 a8
+    :loop_aead
+    @gate49 o2 a#8 g#8 @pitch16 o4 g8 @pitch0
+    o2 a#8 r8 o3 c#8 @pitch16 o4 g8
+    @key17 @pitch0 o2 a#8 f8 o3 f8 @key29
+    @pitch16 o4 g8 @pitch0 o3 e8 d#8 c#8
+    @pitch16 o4 g8 @pitch0 o2 g#8 @loop0,loop_aead
+
+NOI:
+    @tick5 @env3,4 v15 r2 r4 n7/8 n7/8
+    :loop_aee2
+    @env2,15 n2/8 n2/8 n2/8 n2/8 n2/8 n2/8 n2/8
+    @env4,9 n2/8 @loop0,loop_aee2
+
+MOD:

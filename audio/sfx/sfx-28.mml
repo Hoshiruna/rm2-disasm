@@ -1,0 +1,8 @@
+#rockman2 0x28
+#priority 12
+#channels SQ1 SQ2
+
+FX:
+    :loop_bc2f
+    @mod1,65,128,0 v15 @d1 p106%4 @d1 @mod1,65,128,0 v15 p84
+    @loop2,loop_bc2f !

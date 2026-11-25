@@ -1,0 +1,31 @@
+#rockman2 0x16
+
+SQ1:
+    @tick6 v15 @d0 @key35 @env47,1 o5 c2. @tuplet
+    c8 @tuplet o4 b8 @tuplet o5 c8 d2.
+    @tuplet d8 @tuplet c8 @tuplet d8 e2. @tuplet
+    e8 @tuplet d8 @tuplet e8 f2 @tuplet f8
+    @tuplet e8 @tuplet f8 @tuplet d8 @tuplet f8
+    @tuplet a8 g1. !
+
+SQ2:
+    @tick6 @d1 @key35 v15 @env47,1 o4 g2. @tuplet
+    g8 @tuplet g8 @tuplet o5 e8 g2. @tuplet
+    g8 @tuplet f8 @tuplet e8 c2. @tuplet c8
+    @tuplet o4 b8 @tuplet o5 c8 d2 @tuplet
+    d8 @tuplet c8 @tuplet d8 @tuplet o4 a8
+    @tuplet o5 d8 @tuplet f8 e1. !
+
+TRI:
+    @tick6 @gate80 @key47
+    :loop_bac9
+    o4 c8 c8 c8 c16 c16 r16 c8
+    c16 c8 c8 @loop3,loop_bac9 c1. !
+
+NOI:
+    @tick6
+    :loop_badc
+    @env3,15 v15 n3/16 n3/16 n3/8 @loop15,loop_badc !
+
+MOD:
+    @wave1,98,128,0

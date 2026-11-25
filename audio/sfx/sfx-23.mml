@@ -1,0 +1,8 @@
+#rockman2 0x23
+#priority 3
+#channels SQ2 NOI
+
+FX:
+    :loop_bb90
+    @d0 v15 p427%3 @d2 v15 p10 @loop1,loop_bb90 v8
+    @d3 @pitch-1 p63%16 @d2 @mod0,0,132,1 p7 !

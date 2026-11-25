@@ -1,0 +1,8 @@
+#rockman2 0x22
+#priority 10
+#channels SQ1 SQ2 TRI NOI
+
+FX:
+    @d2 @pitch32 v15 p134 @d0 @pitch32 v15 p269
+    @volume127 @pitch32 p427%10 v10 @d2 p10 @pitch21 p100
+    @pitch21 p201 @pitch21 p762%58 @d0 p8 !
